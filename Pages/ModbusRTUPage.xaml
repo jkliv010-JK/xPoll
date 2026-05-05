@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xPoll.Pages.ModbusRTUPage"
+             Title="Modbus RTU">
+  <ScrollView>
+    <VerticalStackLayout
+        Padding="10"
+        Spacing="20">
+
+        <Label Text="Modbus RTU Configuration" FontSize="24" />
+
+        <Entry x:Name="PortEntry" Placeholder="Enter COM Port (e.g., COM3)" />
+        <Entry x:Name="BaudRateEntry" Placeholder="Enter Baud Rate (e.g., 9600)" Keyboard="Numeric" />
+
+        <Button Text="Connect" />
+    </VerticalStackLayout>
+  </ScrollView>
+</ContentPage>

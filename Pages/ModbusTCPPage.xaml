@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xPoll.Pages.ModbusTCPPage"
+             Title="Modbus TCP">
+  <ScrollView>
+    <VerticalStackLayout
+        Padding="10"
+        Spacing="20">
+
+        <Label Text="Modbus TCP Configuration" FontSize="24" />
+
+        <Entry x:Name="HostEntry" Placeholder="Enter IP Address" />
+        <Entry x:Name="PortEntry" Placeholder="Enter TCP Port (Default: 502)" Keyboard="Numeric" />
+
+        <Button Text="Connect" />
+    </VerticalStackLayout>
+  </ScrollView>
+</ContentPage>
